@@ -11,17 +11,17 @@ body {
 }
 
 header {
+    text-align: center;
    margin-bottom:1.5em; 
 }
 
-header h1 {
+header span, footer span {
     margin-bottom: .5em;
-
 }
 
-header div ul {
+header div ul, footer ul {
     display: flex;
-    gap:.7em;
+    gap:.5em;
 }
 
 main, main .profile {
@@ -34,17 +34,141 @@ main, main .profile {
 main .profile h2 {
     font-size: 2.5rem;
     margin-bottom: 1em;
-}
-main .profile p {
-    /* font-size: 2.5rem; */
-    margin-bottom: 1.5em;   
+    text-align: center;
 }
 
-main .profile a {
+main .profile .profession {
+    font-size: 1.4rem;
+    margin-bottom: 1.7em;
+}
+
+
+main .profile .description {
+    font-size: 1.1rem;
+    margin-bottom: 2em; 
+    text-align: center;
+}
+
+main .profile a, .projects .projects_header a  {
     text-decoration: none;
     color: #fff;
-    margin-bottom: 1.5em;   
+    margin-bottom: 2em;   
 }
 main div img {
+    margin-bottom: 2.7em;
+}
+
+main .border_01 {
+   height: 1px;
+   width: 100%;
+   background-color: #fff;
+   margin-bottom: 2.7em;;
+}
+
+main .stack{
+    margin-bottom:2.7em;
+}
+
+main .stack .stack_elements{
+    margin-bottom: 1em;
+}
+
+main .stack .stack_elements h3 {
+    font-size: 1.7rem;
+    margin-bottom: .2em;
+}
+
+main .stack .stack_elements p {
+    font-size: 1rem;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 1.5em;
 }
+
+.projects .projects_header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+}
+
+.projects .projects_header {
+    margin-bottom: 2em;  
+}
+.projects article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+.projects article img{
+    width: 18em;
+    margin-bottom: 1em;
+}
+.projects article h4{
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+.projects article ul {
+    display: flex;
+    flex-direction:row;
+    gap: .5em;
+    margin-bottom: 1em;
+}
+.projects article .buttons{
+    display: flex;
+    flex-direction:row;
+    gap: .5em;
+    padding: .2em;
+}
+.projects article .buttons button{
+    background-color: #000;
+    color:#fff ;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    outline: none;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5em;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+}
+
+.contact p {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.contact form {
+    margin-bottom: .5em;
+}
+
+.contact form input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.contact button{
+    background-color: #000;
+    color:#fff ;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    outline: none;
+    padding: .5em;
+}
+
+
