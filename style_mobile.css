@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+/* calor variables */
+:root {
+    --primary_color: #fff;
+    --secondary_color: rgb(136, 133, 133);
+    --border_color:green;
+    --primary_background_color:#000;
+  }
+
+body {
+    font-family: "space-grotesk", sans-serif;
+    background-color: var(--primary_background_color);
+    color: var(--primary_color);
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin:1.7em;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom:1.2em; 
+}
+
+header span {
+    font-size: 1.2rem;
+}
+
+header ul{
+    display: flex;
+    gap:1em;
+}
+
+header ul li a img, footer ul li a img{
+    width: 1.5em;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .profile h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .5em;
+    text-align: center;
+    line-height: 1.1;
+}
+
+
+main .profile .description {
+    font-size: .9rem;
+    text-align: center;
+    line-height: 1.2;
+    color:var(--secondary_color) ;
+    margin: 0 1.8em 1.4em; 
+}
+
+main .profile button {
+    position: relative;
+    font-size: 1rem;
+    border: none;
+    color: #fff;
+    background-color: #000;
+    padding-bottom: .7em; 
+    cursor: pointer;
+    margin-bottom: 3em;
+}
+
+main .profile button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 6.5em; 
+    height: 2px; 
+    background-color: green; 
+}
+
+
+main img {
+    margin-bottom: 1.7em;
+}
+
+.border_01 {
+   height: 1px;
+   width: 100%;
+   background-color: var(--secondary_color);
+   margin-bottom: 2.7em;;
+}
+
+.stack{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.7em;
+}
+
+.stack .stack_elements{
+    margin-bottom: 1em;
+}
+
+.stack .stack_elements h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: .2em;
+}
+
+.stack .stack_elements p {
+    font-size: .8rem;
+    font-weight: 300;
+    color: var(--secondary_color);
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 7em;
+}
+
+.projects .projects_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4em; 
+    gap: 1.5em; 
+}
+
+.projects .projects_header button {
+    position: relative;
+    font-size: 1rem;
+    border: none;
+    color: #fff;
+    background-color: #000;
+    padding-top: 1.4em;
+    padding-bottom: .8em; 
+    cursor: pointer;
+}
+
+.projects .projects_header button::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 6.5em; 
+    height: 2px; 
+    background-color: var(--border_color); 
+    display: block;
+}
+
+
+.projects .projects_header h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.projects article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5em;
+}
+.projects article img{
+    width: 18em;
+    margin-bottom: 1.2em;
+}
+.projects article h4{
+    font-size: 1.25rem;
+    margin-bottom: 1em;
+}
+.projects article ul {
+    display: flex;
+    flex-direction:row;
+    gap: .5em;
+    margin-bottom:1.1em;
+}
+
+.projects article ul li{
+    font-size: .9rem;
+    color: var(--secondary_color);
+}
+.projects article .buttons{
+    display: flex;
+    flex-direction:row;
+    gap: .5em;
+    padding: .2em;
+}
+.projects article .buttons a{
+    text-decoration: none;
+    color: #fff;
+}
+.projects article .buttons button{
+    background-color: #000;
+    color:var(--primary_color);
+    border: 1px solid #fff;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10em;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.contact p {
+    font-size: .9rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color:var(--primary_color) ;
+    margin: 0 2.4em 2.5em; 
+    text-align: center;
+}
+
+.contact form {
+    margin-bottom: 6.5em;
+    padding-inline:2em;
+}
+
+.contact form input, .contact form textarea{
+    font-family: "space-grotesk", sans-serif;
+    width: 100%;
+    margin-bottom: 1em;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: .3em;
+}
+
+.contact button{
+    background-color: #000;
+    color:var(--primary_color) ;
+    border: 1px solid var(--secondary_color);
+    border-radius: 10px;
+    outline: none;
+    padding: .5em;
+    width: 100%;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+footer ul {
+    display: flex;
+    gap:1em;
+}

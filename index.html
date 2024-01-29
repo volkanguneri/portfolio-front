@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_mobile.css">
+  <link rel="stylesheet" href="style_tablet.css">
+  <link rel="stylesheet" href="style_desktop.css">
   <title>Volkan Güneri Developer Portfolio</title>
 </head>
 
 <body>
   <header>
-  <span>volkangüneri</span>
-  <div>
+    <span>volkangüneri</span>
     <ul>
       <li><a href="https://github.com/volkanguneri" target="_blank"><img src="assets/images/icon-github.svg" alt="github icon"></a></li>
       <li><a href="https://linkedin.com/in/volkan-guneri/" target="_blank"><img src="assets/images/icon-linkedin.svg" alt="linkedin icon"></a></li>
@@ -21,17 +22,16 @@
 </header>
 
 <main>
-  <div class="profile">
-    <h2>Volkan Güneri</h2>
-    <p class="profession">Blockchain and Web Developper</p>
-     <p class="description">Based in the France, I'm a frontend web and fullstack blockchain developer passionate about 
-      building centerlised and decenterlized applications and web pages</p>
-     <a href="">CONTACT ME</a>
-  </div>
-  <div>
     <img src="assets/images/portfolio.jpg" alt="profile image">
+    <div class="profile">
+      <h1>Nice to meet you! <br>I'm Volkan Güneri.</h1>
+      <p class="description">Based in France, I'm a frontend web and fullstack blockchain developer passionate about 
+      building web pages, centerlised and decenterlized applications.</p>
+      <button class="scrollToContact">CONTACT ME</button>
   </div>
-  <div class="border_01"></div>
+</main>
+<div class="border_01"></div>
+<section class="stack">
   <div class="stack">
     <div class="stack_elements">
     <h3>HTML</h3>
@@ -51,92 +51,177 @@
     </div>
     <div class="stack_elements">
     <h3>Next</h3>
-    <p>Half Year Experience</p>
+    <p>1/2 Experience</p>
     </div>
     <div class="stack_elements">
     <h3>Solidity</h3>
-    <p>Half Year Experience</p>
+    <p>1/2 Year Experience</p>
     </div>
     <div class="stack_elements">
     <h3>Hardhat</h3>
-    <p>Half Year Experience</p>
+    <p>1/2 Year Experience</p>
     </div>
     <div class="stack_elements">
     <h3>Wagmi</h3>
-    <p>Half Year Experience</p>
+    <p>1/2 Year Experience</p>
     </div>
     <div class="stack_elements">
     <h3>Viem</h3>
-    <p>Half Year Experience</p>
+    <p>1/2 Year Experience</p>
     </div>
-    <div class="stack_elements">
   </div>
-</div>
-</main>
-
+</section>
+<div class="border_01"></div>
 <section class="projects">
   <div class="projects_header">
-    <h2>Projects</h2>
+  <h2>Projects</h2>
+  <button class="scrollToContact">CONTACT ME</button>
+  </div>
+  <!-- FactPapers DAO -->
+  <div class="projects_content">
+  <article>
+    <img src="assets/images/FactPapers_desktop.jpg" alt="fact papers image">
+    <h4>FactPapers DAO</h4>
+    <ul>
+      <li>SOLIDITY</li>
+      <li>NEXT</li>
+      <li>HARDHAT</li>
+      <li>WAGMI</li>
+      <li>VIEM</li>
+    </ul>
+    <div class="buttons">
+      <button><a href="" target="_blank">View project</a></button>
+      <button><a href="https://github.com/volkanguneri/factPapersDAap.git" target="_blank">View code</a></button>
+    </div>
+  </article>
 
-    <a href="">CONTACT ME</a>
-  </div>
+  <!-- Crowdfunding -->
   <article>
-  <img src="assets/images/thumbnail-project-3-small.webp" alt="todo project image">
-  <h4>TODO</h4>
+    <img src="assets/images/crowdfunding_desktop.jpg" alt="crowdfunding image">
+    <!-- <img src="assets/images/crowdfunding_mobile_01.jpg" alt="crowdfunding image"> -->
+    <!-- <img src="assets/images/crowdfunding_mobile_02.jpg" alt="crowdfunding image"> -->
+    <h4>Crowdfunding</h4>
+    <ul>
+      <li>REACT</li>
+    </ul>
+    <div class="buttons">
+      <button><a href="https://volkanguneri.github.io/crowdfunding/" target="_blank">View project</a></button>
+      <button><a href="https://github.com/volkanguneri/crowdfunding.git" target="_blank">View code</a></button>
+    </div>
+  </article>
+
+  <!-- Job Listing With Filtering -->
+  <article>
+    <img src="assets/images/job_listing_desktop.jpg" alt="nft image">
+    <h4>Job Listing With Filtering</h4>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ul>
+    <div class="buttons">
+      <button><a href="https://volkanguneri.github.io/job-listings/" target="_blank">View project</a></button>
+      <button><a href="https://github.com/volkanguneri/job-listings.git" target="_blank">View code</a></button>
+    </div>
+  </article>
+
+  <!-- Todo List -->
+  <article>
+  <img src="assets/images/todo_mobile.jpg" alt="todo project image">
+  <h4>Todo List</h4>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
+  </ul>
+  <div class="buttons">
+    <button><a href="https://volkanguneri.github.io/todo/" target="_blank">View project</a></button>
+    <button><a href="https://github.com/volkanguneri/todo.git" target="_blank">View code</a></button>
+  </div>
+</article>
+
+<!-- Advise Generator -->
+<article>
+  <img src="assets/images/advice_generator_mobile.jpg" alt="advice generator image">
+  <h4>Advice Generator</h4>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
+    <li>API</li>
+  </ul>
+  <div class="buttons">
+    <button><a href="https://volkanguneri.github.io/advice-generator/" target="_blank">View project</a></button>
+    <button><a href="https://github.com/volkanguneri/advice-generator.git" target="_blank">View code</a></button>
+  </div>
+</article>
+
+<!-- Interactive Rating Component -->
+<article>
+  <img src="assets/images/interactive_rating_component_mobile.jpg" alt="interactive rating component">
+  <h4>Interactive Rating Component</h4>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
+  </ul>
+  <div class="buttons">
+    <button><a href="https://volkanguneri.github.io/Interactive-Rating-Component/" target="_blank">View project</a></button>
+    <button><a href="https://github.com/volkanguneri/Interactive-Rating-Component.git" target="_blank">View code</a></button>
+  </div>
+</article>
+
+<!-- Countdown Timer -->
+<article>
+  <img src="assets/images/countdown_mobile.jpg" alt="nft image">
+  <h4>Countdown Timer</h4>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
+  </ul>
+  <div class="buttons">
+    <button><a href="https://volkanguneri.github.io/Launch-Countdown-Timer-/" target="_blank">View project</a></button>
+    <button><a href="https://github.com/volkanguneri/Launch-Countdown-Timer-.git" target="_blank">View code</a></button>
+  </div>
+</article>
+
+<!-- NFT Card Component -->
+<article>
+  <img src="assets/images/nft_mobile.jpg" alt="nft image">
+  <h4>NFT Card Component</h4>
   <ul>
     <li>HTML</li>
     <li>CSS</li>
   </ul>
   <div class="buttons">
-    <button>View project</button>
-    <button>View code</button>
+    <button><a href="https://volkanguneri.github.io/nft/" target="_blank">View project</a></button>
+    <button><a href="https://github.com/volkanguneri/nft.git" target="_blank">View code</a></button>
   </div>
 </article>
-  <article>
-  <img src="assets/images/thumbnail-project-3-small.webp" alt="todo project image">
-  <h4>TODO</h4>
-  <ul>
-    <li>HTML</li>
-    <li>CSS</li>
-  </ul>
-  <div class="buttons">
-    <button>View project</button>
-    <button>View code</button>
-  </div>
-</article>
-  <article>
-  <img src="assets/images/thumbnail-project-3-small.webp" alt="todo project image">
-  <h4>TODO</h4>
-  <ul>
-    <li>HTML</li>
-    <li>CSS</li>
-  </ul>
-  <div class="buttons">
-    <button>View project</button>
-    <button>View code</button>
-  </div>
-</article>
+</div>  
 </section>
 
-<section class="contact">
+<section id="contact" class="contact">
   <h2>Contact</h2>
   <p>I would love to hear about your project and how I could help. Please 
   fill in the form, and I’ll get back to you as soon as possible</p>
   <form action="">
     <input type="text" placeholder="NAME">
     <input type="email" placeholder="EMAIL">
-    <input type="textarea" placeholder="MESSAGE">
+    <textarea id="message" name="message" placeholder="MESSAGE"></textarea>
+    <button>Send message</button>
   </form>
-  <button>Send message</button>
 </section>
 
   <footer>
-  <span>volkangüneri</span>
   <ul>
     <li><a href="https://github.com/volkanguneri" target="_blank"><img src="assets/images/icon-github.svg" alt="github icon"></a></li>
     <li><a href="https://linkedin.com/in/volkan-guneri/" target="_blank"><img src="assets/images/icon-linkedin.svg" alt="linkedin icon"></a></li>
     <li><a href="" target="_blank"><img src="assets/images/icon-twitter.svg" alt="twitter icon"></a></li>
   </ul>
+  <span> &copy Volkan Güneri</span>
+
 </footer>
 
 </body>
