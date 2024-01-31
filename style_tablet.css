@@ -1,4 +1,9 @@
-@media all and (min-width: 800px) {
+@media all and (min-width: 767px) {
+
+    body {
+        max-width: 39em;
+    }
+
     header {
         flex-direction: row;
         width: 100%;
@@ -33,16 +38,47 @@
         gap: 0 5em;
     }
 
+    .projects {
+        max-width: 39em;
+    }
+
     .projects .projects_content {
-        display: grid;
+          display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin-inline: 10em;
-        gap: 0 5em;
+        gap: 0 1em;
     }
+    .projects .projects_content .project_info{
+        width: 22em;
+    } 
+
+    /* .projects .projects_content article{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+    } */
+
+    /* .contact {
+        width: 100%;
+    } */
 
     .contact p {
         margin-inline: 15em;
+        max-width: 25em;
     }
+
+    footer {
+        flex-direction: row-reverse;
+        /* justify-content: flex-start; */
+        width: 100%;
+    }
+
+    footer span {
+        flex-grow: 1;
+    }
+
 
 
 

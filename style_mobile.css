@@ -8,15 +8,26 @@
     --primary_background_color:#000;
   }
 
+html {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    }
+
 body {
     font-family: "space-grotesk", sans-serif;
     background-color: var(--primary_background_color);
+    /* background: url(assets/images/capture/5.PNG) no-repeat; */
+    /* background-position:center 485.8em; */
+    /* opacity: .7; */
+
     color: var(--primary_color);
     display:flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    margin:1.7em;
+    margin: 1.4em 2.1em;
 }
 
 header {
@@ -24,21 +35,22 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1em;
-    margin-bottom:1.2em; 
+    gap: 1.6em;
+    margin-bottom:2em; 
 }
 
 header span {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 header ul{
     display: flex;
-    gap:1em;
+    gap:2em;
 }
 
 header ul li a img, footer ul li a img{
-    width: 1.5em;
+    width: 1.2em;
 }
 
 main{
@@ -46,6 +58,10 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+main img {
+    width: 12em;
 }
 
 main .profile {
@@ -56,31 +72,48 @@ main .profile {
 }
 
 main .profile h1 {
-    font-size: 2rem;
+    font-size: 2.44rem;
     font-weight: 600;
-    margin-bottom: .5em;
+    line-height: 1.04;
     text-align: center;
-    line-height: 1.1;
+    margin-bottom: .55em;
+}
+main .profile h1 .underline{
+    position:relative;
+    display: inline-block;
+    padding-bottom: .05em;
+}
+
+main .profile h1 .underline::after {
+    content: "";
+    position: absolute;
+    bottom: 0em;
+    left: 1.8em;
+    width: 6.6em; 
+    height: 4px;
+    background-color: var(--border_color);
 }
 
 
 main .profile .description {
     font-size: .9rem;
+    font-weight: 600;
     text-align: center;
-    line-height: 1.2;
-    color:var(--secondary_color) ;
-    margin: 0 1.8em 1.4em; 
+    line-height: 1.75;
+    max-width: 25em;
+    margin: 0 0em 1.5em; 
 }
 
 main .profile button {
     position: relative;
     font-size: 1rem;
+    letter-spacing: 2px;
     border: none;
     color: #fff;
     background-color: #000;
-    padding-bottom: .7em; 
+    padding-bottom: 1em; 
     cursor: pointer;
-    margin-bottom: 3em;
+    margin-bottom: 4.9em;
 }
 
 main .profile button::after {
@@ -90,21 +123,21 @@ main .profile button::after {
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
-    width: 6.5em; 
+    width: 7.5em; 
     height: 2px; 
     background-color: green; 
 }
 
 
 main img {
-    margin-bottom: 1.7em;
+    margin-bottom: 1.4em;
 }
 
 .border_01 {
-   height: 1px;
+   height: 2px;
    width: 100%;
-   background-color: var(--secondary_color);
-   margin-bottom: 2.7em;;
+   background-color: var(--primary_color);
+   margin-bottom: 2.8em;
 }
 
 .stack{
@@ -114,19 +147,23 @@ main img {
 }
 
 .stack .stack_elements{
-    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2.1em;
 }
 
 .stack .stack_elements h3 {
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin-bottom: .2em;
+    font-size: 1.9rem;
+    font-weight: 500;
+    margin-bottom: .42em;
 }
 
 .stack .stack_elements p {
-    font-size: .8rem;
-    font-weight: 300;
-    color: var(--secondary_color);
+    font-size: .94rem;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 .projects {
@@ -134,6 +171,7 @@ main img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
     margin-bottom: 7em;
 }
 
@@ -141,18 +179,27 @@ main img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 4em; 
-    gap: 1.5em; 
+    width: 100%;
+    margin-bottom: 2em; 
+}
+
+.projects .projects_header h2{
+    font-size: 2.4rem;
+    font-weight: 600;
+    flex-grow: 1;
+    margin-top: .16em;
 }
 
 .projects .projects_header button {
     position: relative;
     font-size: 1rem;
+    letter-spacing: 2.2px;
     border: none;
     color: #fff;
     background-color: #000;
-    padding-top: 1.4em;
-    padding-bottom: .8em; 
+    padding-top: .6em;
+    padding-inline: 0em;
+    padding-bottom: 1em; 
     cursor: pointer;
 }
 
@@ -163,108 +210,182 @@ main img {
     bottom: 0;
     transform: translateX(-50%);
     width: 6.5em; 
+    width: 100%; 
     height: 2px; 
     background-color: var(--border_color); 
     display: block;
 }
 
-
-.projects .projects_header h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
+.projects .projects_content {
+    width: 100%;
 }
+
 .projects article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    width: 100%;
     margin-bottom: 2.5em;
 }
+
+.projects .project_info {
+    text-align: left;
+} 
+
 .projects article img{
-    width: 18em;
-    margin-bottom: 1.2em;
+    text-align: center;
+    width: 22em;
+    margin-bottom: 1.5em;
 }
 .projects article h4{
-    font-size: 1.25rem;
-    margin-bottom: 1em;
+    font-size: 1.35rem;
+    font-weight: 60;
+    margin-bottom: .75em;
+    text-align: left;
 }
 .projects article ul {
     display: flex;
     flex-direction:row;
     gap: .5em;
-    margin-bottom:1.1em;
+    margin-bottom:1.6em;
 }
 
 .projects article ul li{
-    font-size: .9rem;
-    color: var(--secondary_color);
+    font-size: 1.05rem;
+    font-weight: 500;
 }
 .projects article .buttons{
     display: flex;
     flex-direction:row;
-    gap: .5em;
-    padding: .2em;
+    gap: 0 1.4em;
+    width: 100%;
+    padding:.3em 0;
 }
-.projects article .buttons a{
+.projects article .buttons a {
+    font-size: .96rem;
+    font-weight: 500;
     text-decoration: none;
+    letter-spacing: 2.5px;
     color: #fff;
 }
 .projects article .buttons button{
+    position: relative;
     background-color: #000;
     color:var(--primary_color);
-    border: 1px solid #fff;
-    border-radius: 10px;
     outline: none;
+    border: none;
     cursor: pointer;
+    padding-inline: 0;
+    padding-bottom: 1.2em;
 }
+
+.projects article .buttons button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100%; 
+    height: 2px; 
+    background-color: var(--border_color); 
+}
+
+.border_02 {
+    height: 2px;
+    width: 100%;
+    background-color: var(--primary_color);
+    margin-bottom: 4.5em;;
+ }
 
 .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10em;
 }
 
-.contact h2 {
-    font-size: 2.5rem;
+.contact .contact_header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .contact_header h2 {
+    font-size: 2.4rem;
     font-weight: 600;
-    margin-bottom: 1em;
+    margin-bottom: .6em;
 }
 
-.contact p {
+.contact .contact_header p {
     font-size: .9rem;
     font-weight: 600;
-    line-height: 1.2;
-    color:var(--primary_color) ;
-    margin: 0 2.4em 2.5em; 
+    line-height: 1.75;
     text-align: center;
+    width: 100%;
+    margin: 0 2.4em 3.55em; 
 }
 
 .contact form {
-    margin-bottom: 6.5em;
-    padding-inline:2em;
+    width: 100%;
+    margin-bottom: 5em;
 }
 
 .contact form input, .contact form textarea{
     font-family: "space-grotesk", sans-serif;
+    font-size: .9rem;
+    background-color: transparent;
+    color: var(--primary_color);
     width: 100%;
-    margin-bottom: 1em;
     border: none;
     outline: none;
     border-radius: 10px;
-    padding: .3em;
+    margin-bottom: 1.3em;
+    padding:.3em 0 .2em 2em;
 }
 
-.contact button{
-    background-color: #000;
+.contact form textarea {
+    margin-bottom: 3em;
+}
+
+.contact .border_03 {
+   height: 1px;
+   width: 100%;
+   background-color: var(--primary_color);
+   margin-bottom: 2em;
+}
+
+.contact form button{
+    position: relative;
+    font-size: .98rem;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+    background-color: transparent;
     color:var(--primary_color) ;
-    border: 1px solid var(--secondary_color);
-    border-radius: 10px;
+    border: none;
     outline: none;
-    padding: .5em;
-    width: 100%;
+    padding: 1em 0 1em;
+    float: right;
     cursor: pointer;
+}
+
+.contact form button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100%; 
+    height: 3px; 
+    background-color: var(--border_color); 
+}
+
+.border_04 {
+   height: 1px;
+   width: 100%;
+   background-color: var(--primary_color);
+   margin-bottom: 3em;
 }
 
 footer {

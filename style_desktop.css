@@ -1,5 +1,28 @@
-@media all and (min-width: 1440px) {
+@media all and (min-width: 1439px) {
 
-    
+    body {
+        max-width: 70;
+    }
+
+    .stack {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-inline: 10em;
+        gap: 0 5em;
+    }
+
+    .projects .projects_content {
+        /* max-width: 80em; */
+    }
+
+    .contact {
+        justify-content: flex-start;
+        align-items:flex-start;
+        flex-direction: row;
+        gap: 1em;
+        /* max-width: 100em; */
+
+
+    }
 
 }
