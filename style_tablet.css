@@ -6,8 +6,7 @@
 
     body {
         max-width: 33.4em;
-        margin-top: 1.4em;
-        margin: 1.5em 1.9em;
+        margin: 1.5em 1.9em 0;
         
     }
 
@@ -205,14 +204,14 @@
     }
 
     .border_04 {
-        max-width: 34em;
-        margin-bottom: 1.5em;
+        max-width: 45em;
     }
 
 
     footer {
         flex-direction: row-reverse;
         width: 100%;
+        padding-top: 1.5em;
     }
 
     footer span {

@@ -78,6 +78,7 @@
 
     .projects {
         max-width: 52.7em;
+        margin-bottom: 1em;
     }
 
     .projects .projects_header {
@@ -108,7 +109,7 @@
         flex-direction: row;
         gap: 1em;
         max-width: 57.9em; 
-        padding-top: 0;
+        padding-top: 3em;
         gap: 15em;
     }
 
@@ -120,7 +121,7 @@
 
     .contact .contact_header h2 {
         font-size:4rem;
-        margin-bottom: .5em;
+        margin-left: 0;
         max-width: 50em;
 
     }
@@ -130,4 +131,11 @@
         max-width: 40em;
     }
 
+    .border_04 {
+        max-width: 55em;
+    }
+
+    footer { 
+        padding-top: 2.2em;
+    }
 }
