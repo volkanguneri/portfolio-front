@@ -237,17 +237,17 @@
     fill in the form, and I’ll get back to you as soon as possible</p>
   </div>
 
-  <form id="contactForm">
-    <input id="nameInput" type="text" placeholder="NAME">
+  <form id="contactForm" action="/">
+    <input id="nameInput" name="name" type="text" placeholder="NAME">
     <div class="border_03"></div>
     <span id="nameEmptyError" class="error_message">Please enter your name</span>
-    <input id="emailInput" type="email" placeholder="EMAIL" class="mail-input">
+    <input id="emailInput" name="email" type="email" placeholder="EMAIL" class="mail-input">
     <div class="border_03"></div>
     <span id="emailFormatError" class="error_message">Please enter your valid email address</span>
     <textarea id="messageInput" name="message" placeholder="MESSAGE"></textarea>
     <div class="border_03"></div>
     <span id="messageEmptyError" class="error_message">Please enter your message</span>
-    <button id="submitBtn" type="button">SEND MESSAGE</button>
+    <button id="submitBtn" type="submit">SEND MESSAGE</button>
   </form>
   
 </section>
