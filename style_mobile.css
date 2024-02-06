@@ -10,6 +10,7 @@
     --primary_background_color:#000;
     --dark-grey: #242424;
     --grey:#D9D9D9;
+    --error_color:#FF6F5B;
   }
 
 html {
@@ -27,9 +28,10 @@ body {
     /* background: url(assets/images/capture/mobile.jpg) no-repeat;  */
     /* background: url(assets/images/capture/tablet.jpg) no-repeat;  */
     /* background: url(assets/images/capture/desktop.jpg) no-repeat;  */
-    background-position:top center; 
-    background-size: cover;
-    opacity: .7;
+    /* background: url(assets/images/capture/desktop_active.jpg) no-repeat;  */
+    /* background-position:top center; 
+    background-size: contain;
+    opacity: .7; */
 
     color: var(--primary_color);
     display:flex;
@@ -196,7 +198,6 @@ main .profile button::after {
     justify-content: center;
     width: 100%;
     max-width: 22em;
-
     margin-bottom: 2em;
 }
 
@@ -303,6 +304,11 @@ main .profile button::after {
     color: #fff;
     transition: .3s;
 }
+
+.projects article .buttons_desktop button{
+   opacity: 0;
+}
+
 .projects article .buttons button{
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 600;
@@ -395,14 +401,19 @@ main .profile button::after {
 }
 
 .contact form textarea {
+    margin-top: 2em;
     margin-bottom: 3em;
+}
+
+.contact form .mail-input {
+    margin-top: 2em;
 }
 
 .contact .border_03 {
    height: 1px;
    width: 100%;
    background-color: var(--primary_color);
-   margin-bottom: 2em;
+   margin-bottom: .2em;
 }
 
 .contact form button{
@@ -417,6 +428,7 @@ main .profile button::after {
     padding: 1em 0 1em;
     float: right;
     cursor: pointer;
+    margin-top: 2em;
     transition: .3s;
 }
 
@@ -442,6 +454,15 @@ main .profile button::after {
    background-color: var(--primary_color);
    box-shadow: 0 0 0 100vmax var(--dark-grey);
    clip-path: inset(0 -100vmax);
+}
+
+.contact form .error_message {
+    font-size: .8rem;
+    color: var(--error_color);
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    display: none;
 }
 
 footer {

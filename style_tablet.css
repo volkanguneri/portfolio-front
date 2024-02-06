@@ -185,6 +185,7 @@
     }
 
     .contact form textarea {
+        margin-top: 3.45em;
         margin-bottom: 2.85em;
     }
 
@@ -194,13 +195,17 @@
         font-weight: 600;
         letter-spacing: 3px;
         padding-bottom: 1.2em;
+        margin-top: 2em;
         padding-top: .35em;
         /* margin-top: 1em; */
     }
 
+    .contact form .mail-input {
+        margin-top: 3.45em;
+    }
 
-    .contact .border_03 {
-        margin-bottom: 1.45em;
+    .contact form .error_message {
+        font-size: .7rem;
     }
 
     .border_04 {
