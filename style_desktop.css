@@ -99,12 +99,9 @@
     .contact {
         justify-content: flex-start;
         align-items:flex-start;
-        /* flex-direction: row; */
-        /* gap: 1em; */
         max-width: 57.9em; 
         width: 100%;
         padding-top: 3em;
-        /* gap: 15em; */
     }
 
     .contact .contact_header {
