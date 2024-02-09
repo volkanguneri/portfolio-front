@@ -36,14 +36,6 @@
         margin-bottom: 1.05em;
     }
 
-    /* main .profile button {
-        padding-left: 0;
-    }  */
-    
-    /* main .profile button::after {
-        height: 20px; 
-    } */
-
     main .profile h1 .tablet_br {
         display: none;
     }     
@@ -107,11 +99,12 @@
     .contact {
         justify-content: flex-start;
         align-items:flex-start;
-        flex-direction: row;
-        gap: 1em;
+        /* flex-direction: row; */
+        /* gap: 1em; */
         max-width: 57.9em; 
+        width: 100%;
         padding-top: 3em;
-        gap: 15em;
+        /* gap: 15em; */
     }
 
     .contact .contact_header {
@@ -119,6 +112,7 @@
         align-items: flex-start;
         text-align: left;
         max-width: 50em;
+        margin-bottom: 2em;
     }
 
     .contact .contact_header h2 {
@@ -132,10 +126,6 @@
         text-align: left;
         margin: 0;
         max-width: 40em;
-    }
-
-    .contact form .error_message{
-        font-size: .65;
     }
 
     .border_04 {
