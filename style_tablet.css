@@ -1,0 +1,230 @@
+@media all and (min-width: 768px) {
+
+    html {
+        font-size: 21px;
+    }
+
+    body {
+        max-width: 33.4em;
+        margin: 1.5em 1.9em 0;
+        
+    }
+
+    header {
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 4.5em;
+    }
+
+    header span {
+        letter-spacing: 2.2px;
+        flex-grow: 1;
+    }
+
+    main {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        margin-bottom: 2em;
+    }
+
+
+    main .profile {
+        align-items: flex-start;
+        gap: 1em;
+    }
+    main .profile h1{
+        font-size: 2.7rem;
+        text-align: left;
+        letter-spacing: 3px;
+        line-height: 1.16;
+        max-width: 500px;
+        margin-bottom: .7em;
+    }
+
+    main .profile h1 .tablet_br {
+        display: block;
+    }     
+
+    main .profile .description {
+        font-size: .84rem;
+        font-weight: 500;
+        text-align: left;
+        line-height: 1.6;
+        margin: 0 5em 1.1em 0; 
+    }
+
+    main .profile button {
+        position: relative;
+        font-size: .74rem;
+        font-weight: 500;
+        letter-spacing: 2.5px;
+        padding-inline:0;
+        margin-bottom: 1.1em;
+
+    }
+
+    main .profile button::after {
+        width: 100%; 
+    }
+
+     .stack {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0 3.5em; 
+        text-align: left;
+        width: 100%;
+        margin-left: 0;
+        max-width: 30em;
+        margin-bottom: 1.5em;
+    }
+
+    .stack .stack_elements{
+        align-items: flex-start;
+        margin-bottom: 3.1em;
+    }
+
+    .stack .stack_elements h3 {
+        font-size: 2.2rem;
+        font-weight: 500;
+        margin-bottom: .5em;
+    }
+
+    .stack .stack_elements p {
+        font-size: .76rem;
+    }
+
+    .border_02 {
+        display: none;
+    }
+    
+
+    .projects {
+        max-width: 39em;
+        margin-bottom: 0em;
+    }
+
+    .projects .projects_header {
+        margin-bottom: 3em;
+        max-width: 39em;
+    }
+
+    .projects .projects_header h2{
+        font-size: 3rem;
+    }
+
+    .projects .projects_header button{
+        font-size: .76rem;
+        padding-top:.9em;
+        padding-bottom: 1em;
+        letter-spacing: 2.5px;
+    }
+
+    .projects .projects_content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0 1em;
+        width: 100%;
+    }
+
+    .projects .projects_content .project_info h4 {
+        font-size: 1.14rem;
+        margin-bottom: .7em;
+    } 
+
+    .projects article{
+        text-align: left;
+        max-width: 342px;
+    }
+
+    .projects article img{
+        text-align: left;
+        width: 16.2em;
+        margin-bottom: 1.25em;
+    }
+
+    .projects article ul {
+        margin-bottom: 1em;
+    }
+
+    .projects article ul li{
+        font-size: .86rem;
+        padding-right: .4em;
+    }
+
+   .projects article .buttons button a{
+    font-size: .75rem;
+   }
+
+   .contact {
+    padding-top: 4.7em;
+   }
+
+   .contact .contact_header h2 {
+    font-size: 3.3rem;
+    margin-bottom: .3em;
+   }
+   
+    .contact .contact_header p {
+        font-size: .85rem;
+        margin-inline: 15em;
+        max-width: 25em;
+        line-height: 1.6;
+        margin-bottom: 2.6em;
+    }
+
+    .contact form {
+        max-width: 21.1em;
+        margin-bottom: 4.3em;
+    }
+
+    .contact form input, .contact form textarea {
+        font-size: .75rem;
+        padding-left: 1.5em;
+        padding-bottom: 1.15em;
+        margin-bottom: 0em;
+    }
+
+    .contact form textarea {
+        margin-top: 3.45em;
+        margin-bottom: 2.85em;
+    }
+
+    .contact form button{ 
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: .71rem;
+        font-weight: 600;
+        letter-spacing: 3px;
+        padding-bottom: 1.2em;
+        margin-top: 2em;
+        padding-top: .35em;
+    }
+
+    .contact form .mail-input {
+        margin-top: 3.45em;
+    }
+
+    .contact form .error_message {
+        font-size: .7rem;
+    }
+
+    .border_04 {
+        max-width: 45em;
+    }
+
+
+    footer {
+        flex-direction: row-reverse;
+        width: 100%;
+        padding-top: 1.5em;
+    }
+
+    footer span {
+        font-size: 1.3rem;
+        flex-grow: 1;
+    }
+
+    footer ul {
+        gap: 1.3em;
+    }
+}
+
