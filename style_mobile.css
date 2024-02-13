@@ -25,23 +25,14 @@ html {
 body {
 
     background-color: var(--primary_background_color);
-    /* background: url(assets/images/capture/mobile.jpg) no-repeat;  */
-    /* background: url(assets/images/capture/tablet.jpg) no-repeat;  */
-    /* background: url(assets/images/capture/desktop.jpg) no-repeat;  */
-    /* background: url(assets/images/capture/desktop_active.jpg) no-repeat;  */
-    /* background-position:top center; 
-    background-size: contain;
-    opacity: .7; */
-
     color: var(--primary_color);
     display:flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    margin: 1.5em 2.1em;
+    margin-inline: 2.1em;
 
-    margin-top: 3em;
-    margin-bottom: 0;
+    margin-block: 3em 0;
 }
 
 header {
@@ -77,6 +68,7 @@ main{
 main img {
     width: 12em;
     margin-bottom: 1.4em;
+    border-radius: 5px;
 }
 
 main .profile {
