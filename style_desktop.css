@@ -21,7 +21,7 @@
     main {
         max-width: 53em;
         gap: 6em;
-        margin-bottom: 9.5em;
+        margin-bottom: 8em;
     }
 
     main .profile h1{
@@ -38,7 +38,12 @@
 
     main .profile h1 .tablet_br {
         display: none;
-    }     
+    }    
+    
+    .alyra-distinction a img{
+        width: 24em;
+        margin-bottom: 12em;
+    }
 
     .border_01 {
         margin-bottom: 3.7em;

@@ -129,7 +129,7 @@ main .profile button {
     background-color: transparent;
     padding-bottom: 1em; 
     cursor: pointer;
-    margin-bottom: 4.9em;
+    margin-bottom: 4.5em;
     transition: .3s;
 }
 
@@ -147,6 +147,17 @@ main .profile button::after {
     width: 7.5em; 
     height: 2px; 
     background-color: var(--border_color); 
+}
+
+.alyra-distinction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alyra-distinction a img{
+    width: 10em;
+    margin-bottom: 4.5em;
 }
 
 .border_01 {

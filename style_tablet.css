@@ -67,7 +67,11 @@
         width: 100%; 
     }
 
-     .stack {
+    .alyra-distinction a img{
+        width:15em;
+    }
+
+    .stack {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 0 3.5em; 
