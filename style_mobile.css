@@ -247,7 +247,7 @@ main .profile button::after {
     width: 100%;
 }
 
-.projects article {
+.projects .projects_content article {
     text-align: center;
     width: 100%;
     max-width: 22em;
@@ -255,40 +255,42 @@ main .profile button::after {
     margin-bottom: 2.5em;
 }
 
-.projects .project_info {
+.projects .projects_content .project_info {
     text-align: left;
 } 
 
-.projects article img{
+.projects .projects_content article img{
     text-align: center;
     width: 22em;
     margin-bottom: 1.5em;
+    cursor: pointer;
 }
-.projects article h4{
+
+.projects.projects_content article h4{
     font-size: 1.35rem;
     font-weight: 60;
     margin-bottom: .75em;
     text-align: left;
 }
-.projects article ul {
+.projects .projects_content article ul {
     display: flex;
     flex-direction:row;
     gap: .5em;
     margin-bottom:1.6em;
 }
 
-.projects article ul li{
+.projects .projects_content article ul li{
     font-size: 1.05rem;
     font-weight: 500;
 }
-.projects article .buttons{
+.projects .projects_content article .buttons{
     display: flex;
     flex-direction:row;
     gap: 0 1.4em;
     width: 100%;
     padding:.3em 0;
 }
-.projects article .buttons a {
+.projects .projects_content article .buttons a {
     font-size: .96rem;
     font-weight: 500;
     text-decoration: none;
@@ -297,11 +299,11 @@ main .profile button::after {
     transition: .3s;
 }
 
-.projects article .buttons_desktop button{
+.projects .projects_content article .buttons_desktop button{
    opacity: 0;
 }
 
-.projects article .buttons button{
+.projects .projects_content article .buttons button{
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 600;
     position: relative;
@@ -314,11 +316,11 @@ main .profile button::after {
     padding-bottom: 1.2em;
     transition: .3s;
 }
-.projects article .buttons button a:hover{
+.projects .projects_content article .buttons button a:hover{
     color: var(--hover_color);
 }
 
-.projects article .buttons button::after {
+.projects .projects_content article .buttons button::after {
     content: "";
     display: block;
     position: absolute;
