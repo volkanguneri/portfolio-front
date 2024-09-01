@@ -49,13 +49,18 @@ header span {
     font-weight: 500;
 }
 
-header ul{
+header ul, footer ul{
     display: flex;
+    align-items: center;
     gap:2em;
 }
 
 header ul li a img, footer ul li a img{
     width: 1.2em;
+}
+
+header ul .certificate, footer ul .certificate{
+    width: 1.45em;
 }
 
 main{
@@ -399,9 +404,4 @@ footer {
     background-color: var(--dark-grey);
     box-shadow: 0 0 0 100vmax var(--dark-grey);
     clip-path: inset(0 -100vmax);
-}
-
-footer ul {
-    display: flex;
-    gap:1em;
 }
